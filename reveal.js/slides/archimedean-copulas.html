@@ -1,0 +1,33 @@
+<section id="archimedean-copulas">
+    <div class="slide-title">\(\textit{4. Archimedean Copulas}\)</div>
+    <div class="props-box">
+        <ul class="props-list" style="list-style-type: square;">
+            <li>An important class of copulas, due to their ease of construction, simple properties and variety,
+                are Archimedean copulas.
+            </li>
+            <li>Common examples include the Clayton, Gumbel, and Frank copulas.</li>
+        </ul>
+    </div>
+    <div class="def-box">
+        <div class="def-title"></div>
+        <div class="def-body">
+            \(\textbf{\textit{Def 4.1 (Archimedean Copula): }}\) A copula \(C\) is Archimedean if there exists a
+            generator function \(\phi: [0, 1] \to [0, \infty]\) with pseudo-inverse \(\phi^{-1}\) such that for all
+            \(u, v \in [0, 1]\)
+            \[
+            C(u, v) = \phi^{-1}(\phi(u) + \phi(v))
+            \text{.}\]
+        </div>
+    </div>
+    <div class="props-box">
+        <ul class="props-list" style="list-style-type: square;">
+            <li>Often these copulas depend on a parameter \(\theta\) and are denoted as \(C_\theta\).</li>
+            <li>The Gumbel copula is defined as
+                \[
+                C_\theta(u, v) = \exp\left(-\left[(-\ln u)^\theta + (-\ln v)^\theta\right]^{1/\theta}\right)
+                \text{,}\]
+                where \(\theta \geq 1\), and \(\phi(t) = (-\ln t)^\theta\) is the generator function.
+            </li>
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,36 @@
+<section id="dependence-measures-2">
+    <div class="def-box">
+        <!-- <div class="def-title"></div> -->
+        <div class="def-body">
+            \(\textbf{\textit{Def 5.3 (Quadrant Dependence): }}\) Let \(X\) and \(Y\) be random variables. \(X\)
+            and \( Y\) are said to be positively quadrant dependent (PQD) if
+            \[P(X \leq x, Y \leq y) \geq P(X \leq x)P(Y \leq y)\text{, for all }x, y\text{.}\]
+            \(X\) and \(Y\) are said to be negatively quadrant dependent (NQD) if
+            \[P(X \leq x, Y \leq y) \leq P(X \leq x)P(Y \leq y)\text{, for all }x, y\text{.}\]
+        </div>
+    </div>
+    <!-- <div class="props-box">
+        <ul class="props-list" style="list-style-type: square;">
+            <li>If \((X, Y)\) are independent, it follows by definition that \(\text{, for all }x, y\text{,}\)
+                \[P(X \leq x, Y \leq y) = P(X \leq x)P(Y \leq y)\text{.}\]
+            </li>
+        </ul>
+    </div> -->
+    <div class="props-box">
+        <ul class="props-list" style="list-style-type: square;">
+            <li>Tail dependence measures how likely it is for two dependent random variables
+                to take extreme values \(\textit{together}\). Caring more about downsides, often our interest lies in
+                the lower values, i.e left tail.
+            </li>
+        </ul>
+    </div>
+    <div class="def-box">
+        <!-- <div class="def-title"></div> -->
+        <div class="def-body">
+            \(\textbf{\textit{Def 5.4 (Tail Dependence): }}\) Let \((X, Y)\) be a bivariate random vector with
+            joint distribution \(F_{X, Y}\) and copula \(C_{X, Y}\). Then the coefficient of lower tail
+            dependence denoted by \(\lambda_l\) is defined as
+            \[\lambda_l = \lim_{q \to 0} P(Y \leq F_Y^{-1}(q) | X \leq F_X^{-1}(q))\text{.}\]
+        </div>
+    </div>
+</section>

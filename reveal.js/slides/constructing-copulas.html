@@ -1,0 +1,31 @@
+<section id="constructing-copulas">
+    <div class="slide-title">\(\textit{3. Constructing Copulas}\)</div>
+    <!-- <div class="def-box">
+        <ul class="def-body" style="list-style-type: square;">
+
+        </ul>
+    </div> -->
+    <div class="props-box">
+        <ul class="props-list" style="list-style-type: square;">
+            <li>A common method for constructing copulas is known as the inversion method. Manipulating the definition
+                of a coupla,
+                \[
+                \begin{align*}
+                F_{X, Y}(x, y) &= C_{X, Y}(F_X(x),F_Y(y)) \\
+                \implies C_{X, Y}(x, y) &= F_{X, Y}(F_X^{(-1)}(x), F_Y^{(-1)}(y)) \tag{3.1}
+                \end{align*}
+                \]
+                Then,
+                \[\begin{align*}
+                {F'}_{X, Y}(x, y) &= C_{X, Y}({F'}_X(x), {F'}_Y(y)) \tag{3.2} \\
+                \end{align*}\]
+            </li>
+            <li>
+                (3.1) implies that a known joint distribution with known marginal distributions can be used to obtain a
+                copula.
+                Having the copula, (3.2) gives a way of obtaining different joint distributions with arbitrary
+                marginals.
+            </li>
+        </ul>
+    </div>
+</section>

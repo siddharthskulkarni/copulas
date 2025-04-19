@@ -1,0 +1,41 @@
+<section id="dependence-measures">
+    <div class="slide-title">\(\textit{5. Dependence Measures}\)</div>
+    <div class="props-box" style="margin: 0;">
+        <ul class="props-list" style="list-style-type: square;">
+            <li>Whether two random variables move in the same direction or in opposite directions is essential in
+                characterizing their dependence.
+                Most dependence measures are based on this concept of \(\textit{concordance}\) and
+                \(\textit{discordance}\).
+            </li>
+        </ul>
+    </div>
+    <div class="def-box">
+        <!-- <div class="def-title"></div> -->
+        <div class="def-body">
+            \(\textbf{\textit{Def 5.1 (Concordance, Discordance): }}\) Let \((X, Y)\) be a continuous bivariate random
+            vector with
+            joint distribution \(F_{X, Y}\). Let \((X_1, Y_1)\), \((X_2, Y_2)\) be an independent sample from \(F_{X,
+            Y}\). Then \((X_1, Y_1)\) and \((X_2, Y_2)\) are said to be concordant if \(X_1 &lt; X_2\) and \(Y_1 &lt;
+            Y_2\) or
+            if \(X_1> X_2\) and \(Y_1 > Y_2\). They are said to be discordant if \(X_1 &lt; X_2\) and \(Y_1> Y_2\)
+            or if \(X_1 > X_2\) and \(Y_1 &lt; Y_2\).
+        </div>
+    </div>
+    <div class="def-box">
+        <!-- <div class="def-title"></div> -->
+        <div class="def-body">
+            \(\textbf{\textit{Def 5.2 (Kendall's Tau): }}\) Let \((X, Y)\) be a continuous bivariate random vector with
+            joint distribution \(F_{X, Y}\). Let \((X_1, Y_1)\), \((X_2, Y_2)\) be an independent sample from
+            \(F_{X,Y}\). Then Kendall's tau is defined as
+            \[
+            \tau_{X, Y} = P[(X_1 - X_2)(Y_1 - Y_2) > 0] - P[(X_1 - X_2)(Y_1 - Y_2) < 0] \] </div>
+        </div>
+        <div class="props-box">
+            <ul class="props-list" style="list-style-type: square;">
+                <li>Note that \(-1 \leq \tau_{X, Y} \leq 1\), with positive values indicating \(X\) and \(Y\) tend to
+                    move in the same direction and negative values indicating they tend to move in
+                    opposite directions.
+                </li>
+            </ul>
+        </div>
+</section>

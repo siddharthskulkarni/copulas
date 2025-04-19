@@ -1,0 +1,44 @@
+<section id="properties-of-copulas">
+    <div class="slide-title">\(\textit{2. Properties of Copulas}\)</div>
+    <div class="props-box">
+        <ul class="props-list" style="list-style-type: square;">
+            <li>Most properties of copulas follow from the fact that they describe joint
+                distributions.
+            </li>
+            <ol style="list-style-type: none;">
+                <li>2.1. \(C_{X, Y}(u, v)\) is increasing in each argument</li>
+                <li>2.2. \(C_{X, Y}(0, v) = 0 = C_{X, Y}(u, 0)\)</li>
+                <li>2.3. \(C_{X, Y}(u, 1) = u\text{, } C_{X, Y}(1, v) = v\)</li>
+                <li>2.4. \(\max(u + v - 1, 0) \leq C_{X, Y}(u, v) \leq \min(u, v)\)</li>
+
+            </ol>
+            <li>For all \(0 \leq u_1 \leq u_2 \leq 1\) and \(0 \leq v_1 \leq v_2 \leq 1\),</li>
+            <ol style="list-style-type: none;">
+                <li>2.5.
+                    \([C_{X, Y}(u_2, v_2) - C_{X, Y}(u_1, v_2)] - [C_{X, Y}(u_2, v_1) - C_{X, Y}(u_1,
+                    v_1)]
+                    \geq 0\)
+                </li>
+                <li>2.6.
+                    \(|C_{X, Y}(u_2, v_2) - C_{X, Y}(u_1, v_1)| \leq |u_2 - u_1| + |v_2 - v_1|\)
+                </li>
+            </ol>
+            <li>If \(X\) and \(Y\) are continuous and independent, then</li>
+            <ol style="list-style-type: none;">
+                <li>2.7. \(C_{X, Y}(u, v) = F_{X, Y}(x, y) = u v\)</li>
+            </ol>
+            <li style="list-style-type: none;">This is the product copula, denoted by \(C_{X, Y}(u, v) = \Pi\).</li>
+            </li>
+            <li>
+                If \(X\) and \(Y\) are continuous random variables, and \(\alpha\) and \(\beta\) are strictly increasing
+                functions on the support of \(X\) and \(Y\), then
+            </li>
+            <ol style="list-style-type: none;">
+                <li>2.8. \(C_{\alpha(X), \beta(Y)}(u, v) = C_{X, Y}(u, v)\)</li>
+            </ol>
+            <li style="list-style-type: none;"> This is known as the invariance property of copulas (under strictly
+                increasing transformations).
+            </li>
+        </ul>
+    </div>
+</section>

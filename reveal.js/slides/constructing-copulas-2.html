@@ -1,0 +1,35 @@
+<section id="constructing-copulas-2">
+    <div class="props-box">
+        <ul class="props-list" style="list-style-type: square;">
+            <li>The most famous (or infamous) copula, obtained using the inversion method, is the Gaussian copula.
+                We construct it as below:
+            </li>
+            <li>
+                Let \(X, Y\) be a bivariate normal random vector with \(\mu_X = \mu_Y = 0\), \(\sigma_X =
+                \sigma_Y = 1\),
+                and correlation coefficient \(\rho\). Then, the joint density function is given by:
+                \[
+                f_{X, Y}(x, y) = \frac{1}{2\pi\sqrt{1 - \rho^2}} \exp\left(-\frac{1}{2(1 - \rho^2)}\left(x^2 - 2\rho xy
+                + y^2\right)\right)\text{.}
+                \]
+                We also know, that \(X\) and \(Y\) are marginally standard normal random variables,
+                \[
+                \begin{align*}
+                f_X(x) &= \frac{1}{\sqrt{2\pi}} \exp\left(-\frac{x^2}{2}\right)\text{, }
+                f_Y(y) = \frac{1}{\sqrt{2\pi}} \exp\left(-\frac{y^2}{2}\right)\text{.}
+                \end{align*}
+                \]
+                Then,
+                \[
+                \begin{align*}
+                F_{X, Y}(x, y) &= \int_{-\infty}^x \int_{-\infty}^y f_{X, Y}(u, v) \, dv \, du \\
+                \implies F_{X, Y}(\Phi^{-1}(u), \Phi^{-1}(v)) &= \int_{-\infty}^{\Phi^{-1}(u)}
+                \int_{-\infty}^{\Phi^{-1}(v)} f_{X, Y}(s, t) \, ds \, dt \tag{3.3} \text{,}
+                \end{align*}
+                \]
+                where \(u = \Phi(x), v = \Phi(y)\) and \(\Phi^{-1}\) is the inverse of the standard normal cumulative
+                distribution function.
+            </li>
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Copulas</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/simple.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	<link rel="stylesheet" href="slides/css/style.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- dynamic slides -->
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/math/math.js"></script>
+	<script>
+		async function loadSlides() {
+			// return;
+			const slidePaths = [
+				"slides/title.html",
+				"slides/what-is-a-copula.html",  // Add more slide files here
+				// "slides/what-is-a-copula-2.html",
+				"slides/properties-of-copulas.html",
+				// "slides/properties-of-copulas-2.html",
+				"slides/constructing-copulas.html",
+				"slides/constructing-copulas-2.html",
+				"slides/constructing-copulas-3.html",
+				"slides/archimedean-copulas.html",
+				"slides/dependence-measures.html",
+				"slides/dependence-measures-2.html",
+				"slides/dependence-measures-3.html",
+				"slides/usefulness-of-copulas.html",
+				// "slides/uses-of-copulas.html",
+				// "slides/choosing-copulas.html",
+				// "sides/fitting-copulas.html",
+				"slides/example.html",
+				// "slides/what-is-tail-dependence.html",
+				"slides/references.html"
+			];
+			const slidesContainer = document.querySelector(".slides");
+			// console.log(slidesContainer)
+
+			for (let path of slidePaths) {
+				const response = await fetch(path);
+				const slideHTML = await response.text();
+				const slideElement = document.createElement("div");
+				slideElement.innerHTML = slideHTML;
+				slidesContainer.appendChild(slideElement.firstChild);
+			}
+		}
+		loadSlides().then(() => {
+			Reveal.initialize({
+				hash: true,
+				katex: {
+					local: 'node_modules/katex',
+				},
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
+			});
+		})
+	</script>
+</body>
+
+</html>

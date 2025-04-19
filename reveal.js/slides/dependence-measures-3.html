@@ -1,0 +1,16 @@
+<section id="dependence-measures-3">
+    <div class="props-box">
+        <ul class="props-list" style="list-style-type: square;">
+            <li>We note that,
+            </li>
+        </ul>
+        \[
+        \begin{align*}
+        \lambda_l &= \lim_{q \to 0} P(Y \leq F_Y^{-1}(q) | X \leq F_X^{-1}(q)) \\
+        &= \lim_{q \to 0} \frac{P(Y \leq F_Y^{-1}(q), X \leq F_X^{-1}(q))}{P(X \leq F_X^{-1}(q))} \\
+        &= \lim_{q \to 0} \frac{P(F_Y(Y) \leq q, F_X(X) \leq q)}{P(F_X(X) \leq q)} \\
+        &= \lim_{q \to 0} \frac{C_{X, Y}(q, q)}{q}
+        \end{align*}
+        \]
+    </div>
+</section>
