@@ -1,1 +1,3 @@
-# copulas
+# Copulas
+
+Studied the theory of copulas as a framework for modeling dependence structures between random variables. The work focused on foundational concepts such as Sklar’s Theorem, construction techniques, key properties, and dependence measures like Kendall’s tau, quadrant dependence, and tail dependence, along with popular classes of copulas (Archimedean, Gaussian). Developed R-based simulations to visualize and compare joint distributions. Currently applying this understanding to model joint price behavior of S&P US sectoral indices using pair-copula constructions and vine copulas, aiming to capture complex dependence structures that are not well-represented by linear correlation.
